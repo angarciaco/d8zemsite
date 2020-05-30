@@ -1,0 +1,21 @@
+# Enangelzemm routing definition
+enangelzemm.settings_tab:
+  route_name: enangelzemm.settings
+  title: 'Settings'
+  base_route: enangelzemm.settings
+
+entity.enangelzemm.canonical:
+  route_name: entity.enangelzemm.canonical
+  base_route: entity.enangelzemm.canonical
+  title: 'View'
+
+entity.enangelzemm.edit_form:
+  route_name: entity.enangelzemm.edit_form
+  base_route: entity.enangelzemm.canonical
+  title: 'Edit'
+
+entity.enangelzemm.delete_form:
+  route_name:  entity.enangelzemm.delete_form
+  base_route:  entity.enangelzemm.canonical
+  title: Delete
+  weight: 10

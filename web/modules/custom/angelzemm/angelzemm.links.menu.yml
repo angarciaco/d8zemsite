@@ -1,0 +1,14 @@
+
+# Enangelzemm menu items definition
+entity.enangelzemm.collection:
+  title: 'Enangelzemm list'
+  route_name: entity.enangelzemm.collection
+  description: 'List Enangelzemm entities'
+  parent: system.admin_structure
+  weight: 100
+
+enangelzemm.admin.structure.settings:
+  title: 'Enangelzemm settings'
+  description: 'Configure Enangelzemm entities'
+  route_name: enangelzemm.settings
+  parent: system.admin_structure

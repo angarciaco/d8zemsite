@@ -1,0 +1,5 @@
+entity.enangelzemm.add_form:
+  route_name: entity.enangelzemm.add_form
+  title: 'Add Enangelzemm'
+  appears_on:
+    - entity.enangelzemm.collection

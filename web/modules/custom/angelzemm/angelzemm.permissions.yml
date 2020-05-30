@@ -1,0 +1,20 @@
+add enangelzemm entities:
+  title: 'Create new Enangelzemm entities'
+
+administer enangelzemm entities:
+  title: 'Administer Enangelzemm entities'
+  description: 'Allow to access the administration form to configure Enangelzemm entities.'
+  restrict access: true
+
+delete enangelzemm entities:
+  title: 'Delete Enangelzemm entities'
+
+edit enangelzemm entities:
+  title: 'Edit Enangelzemm entities'
+
+view published enangelzemm entities:
+  title: 'View published Enangelzemm entities'
+
+view unpublished enangelzemm entities:
+  title: 'View unpublished Enangelzemm entities'
+

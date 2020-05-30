@@ -1,0 +1,15 @@
+angelzemm.multistep_one:
+  path: '/angelzemm/multistep-one'
+  defaults:
+    _form: '\Drupal\angelzemm\Form\Multistep\MultistepOneForm'
+    _title: 'First form'
+  requirements:
+    _permission: 'access content'
+
+angelzemm.multistep_two:
+  path: '/angelzemm/multistep-two'
+  defaults:
+    _form: '\Drupal\angelzemm\Form\Multistep\MultistepTwoForm'
+    _title: 'Second form'
+  requirements:
+    _permission: 'access content'

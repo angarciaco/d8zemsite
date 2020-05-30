@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains angelzemm.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function angelzemm_help($route_name, RouteMatchInterface $route_match) {
+  $output = '';
+
+  switch ($route_name) {
+    // Main module help for the angelzemm module.
+    case 'help.page.angelzemm':
+      $output .= '<h1>' . t('About') . '</h1>';
+      $output .= '<p>' . t("AngelZemm it's an example for passing data from a form to another keeping data between each step, applying Ajax by inside.. saving in a content entity.") . '</p>';
+    break;
+  
+    default:
+  }
+
+  return $output;
+}
+

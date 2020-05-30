@@ -18,8 +18,7 @@ d8zemsite it's an complete Drupal site that contains the angelzemm module includ
 
 #### Installing Drupal Site d8zemsite.com
 
-  - This code constains the required files for installing the site, on this branch (master), after you clone it.
-  - Branch "complete" contains all code, so you would need change credentials for connecting to database, just in case.. and restore SQL on database "d8zemsite" created prevously.
+  - This code contains all code, so you would need change credentials for connecting to database, just in case.. and restore SQL on database "d8zemsite" created prevously.
 
 Starting:
 ```sh
@@ -28,7 +27,10 @@ $ mv d8zemsite d8zemsite.com
 ```
 After that, it's required that you set right credentials for connecting with your database server (MySQL).. so, you need to modify user and password in array variable for database connection in this file:
 ```sh
-sudo nano d8zemsite.com/web/sites/default/settings.php
+$ cd d8zemsite.com
+$ git checkout complete
+$ cd ../../
+$ sudo nano d8zemsite.com/web/sites/default/settings.php
 ```
 On this case, user and password credentials in this file is "root":
 ```sh
@@ -50,13 +52,8 @@ $ tar -zxvf d8zemsite.sql.tar.gz
 $ mysql -u root -p d8zemsite < d8zemsite.sql
 $ cd ../../
 ```
-Finally, continue with installation:
-```sh
-$ chmod -Rf 755 d8zemsite.com/web/sites/default  ==> (Instruction recursive is for Mac)
-$ cd d8zemsite.com
-$ composer install
-```
-Thtat's all. Site it's installed! You can install and uninstall angelzemm module there.
+
+That's all. Site it's installed! You can install and uninstall angelzemm module there.
 
 Credentials, user and password to enter ( d8zemsite.com/user ):
   - User: admin
